@@ -1,0 +1,37 @@
+{
+  "name": "yandex-tank-ammo",
+  "version": "1.0.0",
+  "description": "Generate yandex-tank ammo",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npx mocha ./src/**/*.spec.js",
+    "lint": "npx eslint src",
+    "lint-fix": "npx eslint src --fix",
+    "pre-commit": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlapshin/yandex-tank-ammo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlapshin/yandex-tank-ammo/issues"
+  },
+  "homepage": "https://github.com/nlapshin/yandex-tank-ammo#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.10.0",
+    "husky": "^4.3.0",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "http-raw-request": "^2.0.2",
+    "is-json": "^2.0.1"
+  }
+}
