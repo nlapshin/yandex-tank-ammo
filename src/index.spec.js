@@ -20,7 +20,6 @@ describe('yandex-tank-ammo', () => {
 		const ammo = yandexTankAmmo.generate(list);
 
 		expect(ammo).to.equal('123 qqq\r\nGET / HTTP/1.1\r\nHost: yandex.ru\r\nAuthorization: Bearer 8f81c7fe-f5a1-4322-80fa-b54a6553bba9\r\nUser-Agent: xxx (shell 1)\r\n\r\n\r\n');
-
 	});
 
 	it('should create ammo config with POST method', () => {
